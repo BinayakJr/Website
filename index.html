@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b5d38cfb87.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://binayakbhandari.com.np"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer <i class="fa-solid fa-laptop-code fa-xl"></i></p>
+                <h1>Hi, I'm <span class="multiple-text"></span><br>Bhandari from Nepal</h1>
+                <audio controls>
+                    <source src="music/high.mp3" type="audio/ogg">
+                    <source src="music/high.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio> 
+            </div>
+        </div>
+    </div>
+    <!-- -------------about--------------- -->
+    <div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p align="justify">I'm Binayak Bhandari, a 17-year-old web enthusiast. I've conquered HTML and
+                    CSS, and I'm currently diving into JavaScript and web development. Beyond that, I've tackled
+                    programming languages like C and PHP, and I've brought different projects, including
+                    calculators and login pages. Join me as I continue this exhilarating journey of growth,
+                    creativity, and innovation in the web development realm. Let's shape the digital future together !
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Desigining Web / App interfaces</li>
+                        <li><span>Web Development</span><br>Front-end development / Back-end development</li>
+                        <li><span>App Development</span><br>Building Android / ios apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>UI/UX Design Training at SSIT Institute (example).</li>
+                        <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC (example).</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digial Ltd (example).</li>
+                        <li><span>2016 - 2017</span><br>Internship at ekart eCommerce (example).</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Web Development Training at SSIT Institute (example).</li>
+                        <li><span>2023</span><br>+2 from NVKC Kapurdhara, Samakhusi, Kathmandu.</li>
+                        <li><span>2021</span><br>SEE from HSBS Khudi,Lamjung.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p align="justify">Unlock the potential of your online presence with our web design services. We
+                        create custom, user-friendly websites, optimize for SEO and branding, and provide ongoing
+                        support for sustained success.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p align="justify">Elevate user experiences with our UI/UX design expertise. We craft intuitive
+                        interfaces, optimize user journeys, and ensure your digital products stand out with compelling
+                        design and seamless usability.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p align="justify">Elevate your app's appeal with our design expertise. We create intuitive
+                        interfaces, prioritize user experience, and craft visually engaging mobile and web applications
+                        that captivate your audience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App <i class="fa-solid fa-thumbs-up fa-bounce"></i></h3>
+                        <p align="justify">Stay connected with friends and share your world with our social media app.
+                            Join the conversation, express yourself, and build meaningful connections. Download it from
+                            the <b>Play Store</b> and be part of the social experience today.
+                        </p>
+                        <a href="#"><i class="fa-brands fa-google-play fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App <i class="fa-solid fa-music fa-spin"></i></h3>
+                        <p align="justify">Discover and connect with musical talent from around the world with our music
+                            app. Downloadit now on the <b>Play Store</b> and unlock a world of melody and rhythm.
+                        </p>
+                        <a href="#"><i class="fa-brands fa-google-play fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App <i class="fa-solid fa-cart-shopping fa-beat"></i></h3>
+                        <p align="justify">Shop effortlessly for all your needs with our online shopping app. Explore a
+                            world of convenience and endless choices. Download now from the <b>Play Store</b> and embark
+                            on a shopping adventure like never before.
+                        </p>
+                        <a href="#"><i class="fa-brands fa-google-play fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------Contact---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope fa-flip"></i>binayakbhandari60@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume fa-shake"></i></i>9765654864</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/binayakbhandari.com.np"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/binayak-bhandari/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV <i
+                            class="fa-solid fa-download fa-bounce"></i></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit <i
+                                class="fa-solid fa-paper-plane fa-beat-fade"></i></button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+        <div class="copyright">
+            <p>© <span id="currentDate"></span> Binayak Bhandari. All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+<!-- --------------------Typed JS---------------------->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-----------------------Custom JS--------------------->
+    <script src="script.js"></script>
+
+</body>
+</html>
